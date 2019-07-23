@@ -16,7 +16,8 @@
     },
     "content": {
       "required": true,
-      "type": "text"
+      "type": "text",
+	  "WYSIWYG": true
     },
     "image": {
       "model": "file",
