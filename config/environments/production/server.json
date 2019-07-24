@@ -1,5 +1,5 @@
 {
-  "host": "gramofonika-blog-shard-00-00-hrxbq.mongodb.net:27017",
+  "host": "gramofonika-blog-shard-00-00-hrxbq.mongodb.net",
   "port": 27017,
   "production": true,
   "proxy": {
