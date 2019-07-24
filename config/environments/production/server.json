@@ -1,6 +1,6 @@
 {
-  "host": "localhost",
-  "port": "${process.env.PORT || 1337}",
+  "host": "gramofonika-blog-shard-00-00-hrxbq.mongodb.net:27017",
+  "port": 27017,
   "production": true,
   "proxy": {
     "enabled": false
