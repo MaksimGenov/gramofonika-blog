@@ -1,9 +1,10 @@
 {
-  "host": "https://gramofonika-blog.herokuapp.com",
+  "host": "",
   "port": "",
   "production": true,
   "proxy": {
-    "enabled": true
+    "enabled": true,
+    "host": "https://gramofonika-blog.herokuapp.com"
   },
   "cron": {
     "enabled": false
