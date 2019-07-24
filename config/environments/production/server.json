@@ -3,7 +3,7 @@
   "port": "",
   "production": true,
   "proxy": {
-    "enabled": false
+    "enabled": true
   },
   "cron": {
     "enabled": false
