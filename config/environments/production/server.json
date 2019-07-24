@@ -1,6 +1,6 @@
 {
-  "host": "gramofonika-blog-shard-00-00-hrxbq.mongodb.net",
-  "port": 27017,
+  "host": "https://gramofonika-blog.herokuapp.com",
+  "port": "",
   "production": true,
   "proxy": {
     "enabled": false
