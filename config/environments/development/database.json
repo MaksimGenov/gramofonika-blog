@@ -4,12 +4,11 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "database": "gramofonika_blog_db",
-        "host": "127.0.0.1",
-        "srv": false,
-        "port": 27017,
-        "username": "",
-        "password": ""
+		"host": "${process.env.STRAPI_DATABASE_HOST}",
+        "port": "${process.env.STRAPI_DATABASE_PORT}",
+        "database": "${process.env.STRAPI_DATABASE_NAME}",
+        "username": "${process.env.STRAPI_DATABASE_USERNAME}",
+        "password": "${process.env.STRAPI_DATABASE_PASSWORD}"
       },
       "options": {}
     }
