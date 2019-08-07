@@ -1,6 +1,6 @@
 {
-  "host": "localhost",
-  "port": 1337,
+  "host": "${process.env.STRAPI_SERVER_HOST}",
+  "port": "${process.env.STRAPI_SERVER_PORT}",
   "proxy": {
     "enabled": false
   },
