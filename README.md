@@ -1,6 +1,11 @@
 # Strapi application
 
-A quick description of your strapi application
+A quick description of how to setup the project.
 
-How to configure it - https://strapi.io/documentation/3.0.0-alpha.x/guides/deployment.html#configuration
-
+- clone the project
+- add .env.production file for production
+- add .env.development file for development
+- run "npm install"
+- run "strapi build"
+- run "NODE_ENV=production npm start" for production
+- run "NODE_ENV=development npm start" for development
