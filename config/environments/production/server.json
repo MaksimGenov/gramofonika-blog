@@ -1,10 +1,9 @@
 {
-  "host": "",
-  "port": "",
+  "host": "${process.env.SERVER_HOST}",
+  "port": "${process.env.SERVER_PORT}",
   "production": true,
   "proxy": {
-    "enabled": true,
-    "host": "gramofonika-blog.herokuapp.com"
+    "enabled": false
   },
   "cron": {
     "enabled": false
