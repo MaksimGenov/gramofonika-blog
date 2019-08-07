@@ -1,6 +1,6 @@
 {
-  "host": "${process.env.SERVER_HOST}",
-  "port": "${process.env.SERVER_PORT}",
+  "host": "${process.env.STRAPI_SERVER_HOST}",
+  "port": "${process.env.STRAPI_SERVER_PORT}",
   "production": true,
   "proxy": {
     "enabled": false
