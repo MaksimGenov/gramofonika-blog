@@ -8,12 +8,13 @@
         "host": "${process.env.STRAPI_DATABASE_HOST}",
         "port": "${process.env.STRAPI_DATABASE_PORT}",
         "database": "${process.env.STRAPI_DATABASE_NAME}",
-        "srv": "${process.env.STRAPI_DATABASE_SRV}",
-        "username": "${process.env.STRAPI_DATABASE_USERNAME}",
-        "password": "${process.env.STRAPI_DATABASE_PASSWORD}"
+        "srv": "${process.env.STRAPI_DATABASE_SRV || false}",
+        "username": "${process.env.STRAPI_DATABASE_USERNAME || ''}",
+        "password": "${process.env.STRAPI_DATABASE_PASSWORD || ''}"
       },
       "options": {
-        "ssl": true
+        "ssl": "${process.env.STRAPI_DATABASE_SSL} || false",
+        "authenticationDatabase": "${process.env.STRAPI_DATABASE_AUTHENTICATION_DATABASE || ''}"
       }
     }
   }
