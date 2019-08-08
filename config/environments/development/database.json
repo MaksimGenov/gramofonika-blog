@@ -4,13 +4,17 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-		"host": "${process.env.STRAPI_DATABASE_HOST}",
+        "host": "${process.env.STRAPI_DATABASE_HOST}",
         "port": "${process.env.STRAPI_DATABASE_PORT}",
         "database": "${process.env.STRAPI_DATABASE_NAME}",
-        "username": "${process.env.STRAPI_DATABASE_USERNAME}",
-        "password": "${process.env.STRAPI_DATABASE_PASSWORD}"
+        "srv": "${process.env.STRAPI_DATABASE_SRV || false}",
+        "username": "${process.env.STRAPI_DATABASE_USERNAME || ''}",
+        "password": "${process.env.STRAPI_DATABASE_PASSWORD || ''}"
       },
-      "options": {}
+      "options": {
+        "ssl": "${process.env.STRAPI_DATABASE_SSL} || false",
+        "authenticationDatabase": "${process.env.STRAPI_DATABASE_AUTHENTICATION_DATABASE || ''}"
+      }
     }
   }
 }
